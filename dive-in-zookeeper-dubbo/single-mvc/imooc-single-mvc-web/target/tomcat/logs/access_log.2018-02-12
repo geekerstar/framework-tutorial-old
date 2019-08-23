@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [12/Feb/2018:21:51:55 +0800] "GET /index.action HTTP/1.1" 200 21 http-bio-8080-exec-1 1072
+0:0:0:0:0:0:0:1 - - [12/Feb/2018:21:51:55 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [12/Feb/2018:21:52:18 +0800] "GET /buy.action HTTP/1.1" 200 76 http-bio-8080-exec-4 137
+0:0:0:0:0:0:0:1 - - [12/Feb/2018:21:54:17 +0800] "GET /buy.action?itemId=2 HTTP/1.1" 200 58 http-bio-8080-exec-9 6102
