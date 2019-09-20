@@ -12,6 +12,7 @@
 | dive-in-poi | POI实战 |
 | dive-in-rabbitmq | RabbitMQ实战 |
 | dive-in-spring-annotation | Spring注解开发 |
+| dive-in-spring-elasticjob | Spring整合Elastic-job |
 | dive-in-springboot | SpringBoot源码解析 |
 | dive-in-springcloud | SpringCloud及组件集成实战 |
 | dive-in-springmvc-annotation | SpringMVC注解开发 |
