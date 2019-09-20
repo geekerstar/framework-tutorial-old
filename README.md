@@ -5,6 +5,8 @@
 |  ----  | ----  |
 | dive-in-activiti | Activiti实战 |
 | dive-in-dubbo | Dubbo实战 |
+| dive-in-easyexcel | 阿里开源EasyExcel |
+| dive-in-elasticjob | Elastic-job实战 |
 | dive-in-mybatis-plus | Mybatis实战 |
 | dive-in-netty | Netty实战 |
 | dive-in-poi | POI实战 |
