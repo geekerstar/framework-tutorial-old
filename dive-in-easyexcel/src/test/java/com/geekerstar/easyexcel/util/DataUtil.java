@@ -147,7 +147,7 @@ public class DataUtil {
         // 字体大小
         headFont.setFontHeightInPoints((short)12);
         // 字体
-        headFont.setFontName("楷体");
+        headFont.setFontName("宋体");
         tableStyle.setTableHeadFont(headFont);
         // 背景色
         tableStyle.setTableHeadBackGroundColor(IndexedColors.BLUE);
@@ -157,7 +157,7 @@ public class DataUtil {
         Font contentFont = new Font();
         contentFont.setBold(true);
         contentFont.setFontHeightInPoints((short)12);
-        contentFont.setFontName("黑体");
+        contentFont.setFontName("宋体");
         tableStyle.setTableContentFont(contentFont);
         tableStyle.setTableContentBackGroundColor(IndexedColors.GREEN);
         return tableStyle;
@@ -169,7 +169,7 @@ public class DataUtil {
         Font headFont = new Font();
         headFont.setBold(true);
         headFont.setFontHeightInPoints((short)12);
-        headFont.setFontName("微软雅黑");
+        headFont.setFontName("宋体");
         tableStyle.setTableHeadFont(headFont);
         // 内容背景色
         tableStyle.setTableHeadBackGroundColor(IndexedColors.BLUE1);
@@ -177,7 +177,7 @@ public class DataUtil {
         // 内容样式
         Font contentFont = new Font();
         contentFont.setFontHeightInPoints((short)12);
-        contentFont.setFontName("微软雅黑");
+        contentFont.setFontName("宋体");
         tableStyle.setTableContentFont(contentFont);
         // 内容背景色
         tableStyle.setTableContentBackGroundColor(IndexedColors.WHITE);
