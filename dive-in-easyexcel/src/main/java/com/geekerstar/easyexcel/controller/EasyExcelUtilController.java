@@ -28,7 +28,6 @@ import java.util.List;
 @RequestMapping("easyExcelUtil")
 public class EasyExcelUtilController extends BaseController{
 
-    private static final Log log = LogFactory.getLog(EasyExcelUtilController.class);
 
 
     @GetMapping("getExportData")
