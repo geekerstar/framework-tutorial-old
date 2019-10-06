@@ -9,22 +9,21 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.List;
 
-
 /**
  * @author geekerstar
  * date: 2019/9/22 13:37
  * description: 用于导出多个 sheet 的 Excel，通过多次调用 write 方法写入多个 sheet
  */
-public class ExcelWriterFactroy extends ExcelWriter {
+public class ExcelWriterFactory extends ExcelWriter {
     private OutputStream outputStream;
     private int sheetNo = 1;
 
-    public ExcelWriterFactroy(OutputStream outputStream, ExcelTypeEnum typeEnum) {
+    ExcelWriterFactory(OutputStream outputStream, ExcelTypeEnum typeEnum) {
         super(outputStream, typeEnum);
         this.outputStream = outputStream;
     }
 
-    public ExcelWriterFactroy write(List<? extends BaseRowModel> list, String sheetName,
+    public ExcelWriterFactory write(List<? extends BaseRowModel> list, String sheetName,
                                     BaseRowModel object) {
         this.sheetNo++;
         try {
@@ -32,10 +31,10 @@ public class ExcelWriterFactroy extends ExcelWriter {
             sheet.setSheetName(sheetName);
             this.write(list, sheet);
         } catch (Exception ex) {
-            ex.printStackTrace();
             try {
                 outputStream.flush();
             } catch (IOException e) {
+                //do something
                 e.printStackTrace();
             }
         }
@@ -48,6 +47,16 @@ public class ExcelWriterFactroy extends ExcelWriter {
         try {
             outputStream.flush();
         } catch (IOException e) {
+            //do something
+            e.printStackTrace();
+        }
+    }
+
+    public void close(){
+        try {
+            outputStream.close();
+        } catch (IOException e) {
+            //do something
             e.printStackTrace();
         }
     }
