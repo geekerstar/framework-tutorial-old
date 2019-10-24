@@ -1,0 +1,46 @@
+2019-10-22 17:19:11.592  WARN 16307 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.geekerstar.flowable]' package. Please check your configuration.
+2019-10-22 17:19:12.648 ERROR 16307 --- [main] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.mysql.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-10-22 17:19:12.650  WARN 16307 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+2019-10-22 17:19:12.667 ERROR 16307 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
+
+    Property: driverclassname
+    Value: com.mysql.jdbc.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Unable to set value for property driver-class-name
+
+Action:
+
+Update your application's configuration
+
+2019-10-22 17:20:14.099  WARN 16669 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.geekerstar.flowable]' package. Please check your configuration.
+2019-10-22 17:20:15.169 ERROR 16669 --- [main] com.zaxxer.hikari.HikariConfig           : Failed to load driver class com.mysql.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-10-22 17:20:15.171  WARN 16669 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+2019-10-22 17:20:15.184 ERROR 16669 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
+
+    Property: driverclassname
+    Value: com.mysql.jdbc.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Unable to set value for property driver-class-name
+
+Action:
+
+Update your application's configuration
+
+2019-10-22 17:21:48.623  WARN 17146 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.geekerstar.flowable]' package. Please check your configuration.
+2019-10-22 17:25:08.875  WARN 18156 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.geekerstar.flowable]' package. Please check your configuration.
