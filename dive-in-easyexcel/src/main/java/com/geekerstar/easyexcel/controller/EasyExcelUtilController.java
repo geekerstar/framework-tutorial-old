@@ -38,7 +38,7 @@ public class EasyExcelUtilController extends BaseController{
             list.add(new ExportTestModel(i));
         }
         try {
-            ExcelUtil.writeExcel(response,list,"导出测试","没有设定sheet名称", ExcelTypeEnum.XLSX,ExportTestModel.class);
+            ExcelUtil.writeExcel(response,list,"导出测试","sheet1", ExcelTypeEnum.XLSX,ExportTestModel.class);
         } catch (ExcelException e) {
             log.info(e);
         }
