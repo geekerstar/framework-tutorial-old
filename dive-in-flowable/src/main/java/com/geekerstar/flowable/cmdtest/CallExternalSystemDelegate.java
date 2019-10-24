@@ -10,7 +10,6 @@ import org.flowable.engine.delegate.JavaDelegate;
  */
 public class CallExternalSystemDelegate implements JavaDelegate {
     public void execute(DelegateExecution delegateExecution) {
-        System.out.println("执行外部逻辑 -> "
-                + delegateExecution.getVariable("employee"));
+        System.out.println(delegateExecution.getVariable("employee")+"的请假申请已批准！");
     }
 }

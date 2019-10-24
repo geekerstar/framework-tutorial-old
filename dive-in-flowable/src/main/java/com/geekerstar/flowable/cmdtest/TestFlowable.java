@@ -20,8 +20,14 @@ import java.util.Scanner;
  */
 public class TestFlowable {
     public static void main(String[] args) {
+
         // 初始化ProcessEngine流程引擎实例
-        ProcessEngineConfiguration cfg = new StandaloneProcessEngineConfiguration();
+        ProcessEngineConfiguration cfg = new StandaloneProcessEngineConfiguration()
+                .setJdbcUrl("jdbc:mysql://127.0.0.1:3306/flowable_springboot?useUnicode=true&characterEncoding=utf-8&useSSL=false")
+                .setJdbcUsername("root")
+                .setJdbcPassword("root")
+                .setJdbcDriver("com.mysql.jdbc.Driver")
+                .setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
         ProcessEngine processEngine = cfg.buildProcessEngine();
 
         // 将流程定义部署至Flowable引擎
@@ -74,7 +80,7 @@ public class TestFlowable {
 
         // 完成任务，在排他网关中选择approved的那条
         boolean approved = scanner.nextLine().toLowerCase().equals("y");
-        variables = new HashMap<String, Object>();
+        variables = new HashMap<>();
         variables.put("approved",approved);
         taskService.complete(task.getId(),variables);
 
