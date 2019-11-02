@@ -11,6 +11,12 @@
 
     <artifactId>mp02</artifactId>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
     <dependencies>
         <!-- mp依赖
   			 mybatisPlus 会自动的维护Mybatis 以及MyBatis-spring相关的依赖
