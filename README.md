@@ -1,3 +1,5 @@
+## 仓库废弃，最新请看 https://github.com/geekerstar/framework-tutorial
+
 ## Java常用框架实战教程
 
 
